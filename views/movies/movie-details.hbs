@@ -1,0 +1,19 @@
+    <a href="/movies">Go back</a>
+    
+    <p>{{title}}</p>
+    <p>Genre: {{genre}}</p>
+    <p>Plot: {{plot}}</p>
+      <p>Cast:</p>
+    <ul>
+      {{#each cast}}
+        <li>Name: {{name}}</li>
+        <li>Occupation: {{occupation}}</li>
+        <li>Catch Phrase: {{catchPhrase}}</li>
+      {{/each}}
+    </ul>
+    <a href="/movies/{{id}}/edit">Update</a>
+    <form action="/movies/{{id}}/delete" method="POST">
+      <button>Delete</button>
+    </form>
+    
+ 
